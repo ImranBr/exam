@@ -2,10 +2,8 @@
 
 char	*ft_strdup(const char *src)
 {	
-	int		i;
+	int		i = 0;
 	char	*dest;
-
-	i = 0;
 	while (src[i])
 		i++;
 	dest = malloc(sizeof(char) * (i + 1));
@@ -24,11 +22,10 @@ char	*ft_strdup(const char *src)
 char	*get_next_line(int fd)
 {
 	static char buffer[BUFFER_SIZE];
-	static int buffer_pos = 0;
-	static int pos = 0;
-	char line[70000];
-	int i = 0;
-
+	static int 	buffer_pos = 0;
+	static int 	pos = 0;
+	char 		line[70000];
+	int 		i = 0;
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
 	while (1)
