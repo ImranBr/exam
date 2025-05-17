@@ -86,11 +86,11 @@ int ft_printf(const char *str, ...)
     return (len);
 }
 
-int main()
-{
+// int main()
+// {
     
-    int len = ft_printf("J'ai [%d], [%s], [%x]\n", -16, "je suis", -1);
-    int len2 = printf("J'ai [%d], [%s], [%x]\n", -16, "je suis", -1);
+//     int len = ft_printf("J'ai [%d], [%s], [%x]\n", -16, "je suis", -1);
+//     int len2 = printf("J'ai [%d], [%s], [%x]\n", -16, "je suis", -1);
 
-    printf("moi %d, printf %d\n", len, len2);
-}
+//     printf("moi %d, printf %d\n", len, len2);
+// }
